@@ -1,0 +1,197 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url('../bg terrbaru.png'); /* Ganti dengan URL gambar Anda */
+    background-size: cover; /* Membuat gambar memenuhi layar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; 
+    background-position: center; /* Mengatur posisi gambar di tengah */
+    color: #000000;
+    min-width: 100%;
+}
+
+.text-white {
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,  
+    -1px  1px 0 black,  
+     1px  1px 0 black;
+}
+
+
+nav {
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid #000000;
+    padding : .8em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.7em;
+}
+
+main {
+    /* border: 1px solid #fff; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .container {
+    width: 60%;
+}
+
+.container .form-book {
+    border: 1px solid #161616;
+    width: 100%;
+    margin: 1em 0;
+    padding: .5em 1em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tittle-book, .author-book, .year-book, .image-book {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 5px;
+    gap: 5px;
+}
+
+input[type=text], input[type=date], input[type=number] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    background-color: #e3f6ff;
+    color: #000000;
+    outline: none;
+    border : 1px solid #fff;
+    padding: .5em;
+}
+  
+
+.button-input {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    color : #fff;
+    border: 1px solid #fff;
+    margin: 5px;
+    font-size : 1rem;
+    padding: .5em 1em;
+}
+
+input[type=text]:focus, input[type=number]:focus, .button-input:active {
+    box-shadow : 5px 5px 5px rgba(0,0,0, .5);
+}
+
+.list-item-books {
+    border: 1px solid #000000;
+    background-color: #e3f6ff;
+
+    width: 100%;
+    margin: 1em 0;
+    padding: .5em 1em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container-list-book {
+    border-left : 1px solid #fff;
+    text-align: start;
+    padding: 0 .5em;
+    margin: .5em;
+}
+
+.unread-book img, .alreadyread-book img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px;
+}
+
+.button-selesai, .button-undo, .button-hapus-already-read, .button-hapus-unread {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    margin: 5px;
+    padding: .5em 1em;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+}
+
+.button-selesai:hover, .button-selesai:active {
+    background-color: green;
+    color : #fff;
+}
+
+.button-undo:hover, .button-undo:active {
+    background-color: rgb(146, 146, 15);
+    color : #fff;
+}
+
+.button-hapus-already-read:hover, .button-hapus-unread:hover, .button-hapus:active, .button-batal:active {
+    background-color: red;
+    color : #fff;
+}
+
+.check-book {
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.info-check {
+    margin: 5px;
+    font-size: .9rem;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.7);
+    margin: 10px;
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    padding: 6rem 2re;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (width < 748px) {
+    .unread-book img, .alreadyread-book img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 10px;
+    }
+}
